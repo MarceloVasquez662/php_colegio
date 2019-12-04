@@ -1,0 +1,27 @@
+<?php
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ * Esta clase nos permite insertar a los cursos en la base de datos, para luego poder trabajar con sus datos.
+ * @author Grupo de trabajo
+ */
+function insertarCurso(curso $curso) {
+    $conn = connect();
+    $sql = "insert into curso (idcurso, nombre, profesor_rut)";
+    $sql .= "values (".$curso->getId().", '".$curso->getNombre()."', '". $curso->getProfesor_rut()."')";
+    if ($conn->query($sql) === FALSE) {
+        echo '<div class="alert alert-danger" style="width:85%">';
+        echo 'Error al ingresar el curso: ' . $conn->error;
+        echo '</div>';
+    } else {
+        echo '<div class="alert alert-success" style="width:85%">';
+        echo 'Curso ingresado en el sistema';
+        echo '</div>';
+    }
+    $conn->close();
+}

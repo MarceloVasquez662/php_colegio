@@ -1,0 +1,23 @@
+<?php
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ * Esta clase nos permite modificar los datos del profesor en la base de datos.
+ * @author Grupo de trabajo
+ */
+function actualizarProfesor(profesor $profesor) {
+        $conn = connect();
+        $sql = "update profesor set nombre='".$profesor->getNombre()."', apellido='".$profesor->getApellido()."', nacimiento='".$profesor->getFechaNacimiento()."', correo='".$profesor->getCorreo()."', direccion='".$profesor->getDireccion()."' where rut='".$profesor->getRut()."'";
+        if ($conn->query($sql) === FALSE) {
+            echo '<div class="alert alert-danger" style="width:85%">';
+            echo 'Error al actualizar el profesor: ' . $conn->error;
+            echo '</div>';
+        } else {
+            redirect('MostrarProfesores.php');
+        }
+        $conn->close();
+}

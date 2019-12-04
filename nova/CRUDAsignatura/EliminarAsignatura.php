@@ -1,0 +1,22 @@
+<?php
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ * Esta clase nos permite suprimir los datos de una asignatura, para no poder visualizar ni trabajar con sus datos.
+ * @author Grupo de trabajo
+ */
+function eliminarAsignatura($asignaturaEliminado) {
+    $conn = connect();
+    $sql2 = "delete from profesor_has_asignatura where asignatura_id=" . $asignaturaEliminado . "";
+    $sql3 = "delete from curso_has_asignatura where asignatura_id=" . $asignaturaEliminado . "";
+    $sql1 = "delete from asignatura where id=" . $asignaturaEliminado . "";
+    $result2 = $conn->query($sql2);
+    $result3 = $conn->query($sql3);
+    $result1 = $conn->query($sql1);
+    $conn->close();
+}

@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<?php include 'utils/helpers.php'?>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Galeria</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sl-slide.css">
+
+    <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+
+    <!-- Le fav and touch icons -->
+    <link rel="icon" type="image/png" href="images/ico/logo.png" />
+</head>
+
+<body>
+
+    <!--Header-->
+    <header class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <a id="logo" class="pull-left" href="index.php"></a>
+                <div class="nav-collapse collapse pull-right">
+                    <ul class="nav">
+<?php write_user_menu(); ?>
+                        </ul> 
+                </div><!--/.nav-collapse -->
+            </div>
+        </div>
+    </header>
+    <!-- /header -->
+
+    <section class="title">
+        <div class="container">
+            <div class="row-fluid">
+                <div class="span6">
+                    <h1>Galeria de imagenes</h1>
+                </div>
+                <div class="span6">
+                    <ul class="breadcrumb pull-right">
+                        <li><a href="index.php">Inicio</a> <span class="divider">/</span></li>
+                        <li class="active">Galeria</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- / .title -->     
+
+    <section id="portfolio" class="container main">    
+        <ul class="gallery col-4">
+            <!--Item 1-->
+            <li>
+                <div class="preview">
+                    <img alt=" " src="images/portfolio/thumb/6a.png">
+                    <div class="overlay">
+                    </div>
+                    <div class="links">
+                        <a data-toggle="modal" href="#modal-1"><i class="icon-eye-open"></i></a>                                
+                    </div>
+                </div>
+                <div id="modal-1" class="modal hide fade">
+                    <a class="close-modal" href="javascript:;" data-dismiss="modal" aria-hidden="true"><i class="icon-remove"></i></a>
+                    <div class="modal-body">
+                        <img src="images/portfolio/full/IMG-20190326-WA0006.jpg" alt=" " width="100%" style="max-height:400px">
+                    </div>
+                </div>                 
+            </li>
+            <!--/Item 2--> 
+            <li>
+                <div class="preview">
+                    <img alt=" " src="images/portfolio/thumb/0.png">
+                    <div class="overlay">
+                    </div>
+                    <div class="links">
+                        <a data-toggle="modal" href="#modal-2"><i class="icon-eye-open"></i></a>                                
+                    </div>
+                </div>
+                <div id="modal-2" class="modal hide fade">
+                    <a class="close-modal" href="javascript:;" data-dismiss="modal" aria-hidden="true"><i class="icon-remove"></i></a>
+                    <div class="modal-body">
+                        <img src="images/portfolio/full/full0.jpg" alt=" " width="100%" style="max-height:400px">
+                    </div>
+                </div>                 
+            </li>
+             <!--/Item 3--> 
+            <li>
+                <div class="preview">
+                    <img alt=" " src="images/portfolio/thumb/1a.png">
+                    <div class="overlay">
+                    </div>
+                    <div class="links">
+                        <a data-toggle="modal" href="#modal-3"><i class="icon-eye-open"></i></a>                                
+                    </div>
+                </div>
+                <div id="modal-3" class="modal hide fade">
+                    <a class="close-modal" href="javascript:;" data-dismiss="modal" aria-hidden="true"><i class="icon-remove"></i></a>
+                    <div class="modal-body">
+                        <img src="images/portfolio/full/full1.jpg" alt=" " width="100%" style="max-height:400px">
+                    </div>
+                </div>                 
+            </li>
+             <!--/Item 4--> 
+            <li>
+                <div class="preview">
+                    <img alt=" " src="images/portfolio/thumb/10.png">
+                    <div class="overlay">
+                    </div>
+                    <div class="links">
+                        <a data-toggle="modal" href="#modal-4"><i class="icon-eye-open"></i></a>                                
+                    </div>
+                </div>
+                <div id="modal-4" class="modal hide fade">
+                    <a class="close-modal" href="javascript:;" data-dismiss="modal" aria-hidden="true"><i class="icon-remove"></i></a>
+                    <div class="modal-body">
+                        <img src="images/portfolio/full/full10.jpg" alt=" " width="100%" style="max-height:400px">
+                    </div>
+                </div>                 
+            </li>
+             <!--/Item 5--> 
+            <li>
+                <div class="preview">
+                    <img alt=" " src="images/portfolio/thumb/11.png">
+                    <div class="overlay">
+                    </div>
+                    <div class="links">
+                        <a data-toggle="modal" href="#modal-5"><i class="icon-eye-open"></i></a>                                
+                    </div>
+                </div>
+                <div id="modal-5" class="modal hide fade">
+                    <a class="close-modal" href="javascript:;" data-dismiss="modal" aria-hidden="true"><i class="icon-remove"></i></a>
+                    <div class="modal-body">
+                        <img src="images/portfolio/full/full11.jpg" alt=" " width="100%" style="max-height:400px">
+                    </div>
+                </div>                 
+            </li>
+             <!--/Item 6--> 
+            <li>
+                <div class="preview">
+                    <img alt=" " src="images/portfolio/thumb/122.png">
+                    <div class="overlay">
+                    </div>
+                    <div class="links">
+                        <a data-toggle="modal" href="#modal-6"><i class="icon-eye-open"></i></a>                                
+                    </div>
+                </div>
+                <div id="modal-6" class="modal hide fade">
+                    <a class="close-modal" href="javascript:;" data-dismiss="modal" aria-hidden="true"><i class="icon-remove"></i></a>
+                    <div class="modal-body">
+                        <img src="images/portfolio/full/full122.jpg" alt=" " width="100%" style="max-height:400px">
+                    </div>
+                </div>                 
+            </li>
+             <!--/Item 7--> 
+            <li>
+                <div class="preview">
+                    <img alt=" " src="images/portfolio/thumb/18a.png">
+                    <div class="overlay">
+                    </div>
+                    <div class="links">
+                        <a data-toggle="modal" href="#modal-7"><i class="icon-eye-open"></i></a>                                
+                    </div>
+                </div>
+                <div id="modal-7" class="modal hide fade">
+                    <a class="close-modal" href="javascript:;" data-dismiss="modal" aria-hidden="true"><i class="icon-remove"></i></a>
+                    <div class="modal-body">
+                        <img src="images/portfolio/full/full18.jpg" alt=" " width="100%" style="max-height:400px">
+                    </div>
+                </div>                 
+            </li>
+             <!--/Item 8--> 
+            <li>
+                <div class="preview">
+                    <img alt=" " src="images/portfolio/thumb/20a.png">
+                    <div class="overlay">
+                    </div>
+                    <div class="links">
+                        <a data-toggle="modal" href="#modal-8"><i class="icon-eye-open"></i></a>                                
+                    </div>
+                </div>
+                <div id="modal-8" class="modal hide fade">
+                    <a class="close-modal" href="javascript:;" data-dismiss="modal" aria-hidden="true"><i class="icon-remove"></i></a>
+                    <div class="modal-body">
+                        <img src="images/portfolio/full/full20.jpg" alt=" " width="100%" style="max-height:400px">
+                    </div>
+                </div>                 
+            </li>
+             <!--/Item 9--> 
+            <li>
+                <div class="preview">
+                    <img alt=" " src="images/portfolio/thumb/21a.png">
+                    <div class="overlay">
+                    </div>
+                    <div class="links">
+                        <a data-toggle="modal" href="#modal-9"><i class="icon-eye-open"></i></a>                                
+                    </div>
+                </div>
+                <div id="modal-9" class="modal hide fade">
+                    <a class="close-modal" href="javascript:;" data-dismiss="modal" aria-hidden="true"><i class="icon-remove"></i></a>
+                    <div class="modal-body">
+                        <img src="images/portfolio/full/full21.jpg" alt=" " width="100%" style="max-height:400px">
+                    </div>
+                </div>                 
+            </li>
+               <!--/Item 10--> 
+            <li>
+                <div class="preview">
+                    <img alt=" " src="images/portfolio/thumb/118.png">
+                    <div class="overlay">
+                    </div>
+                    <div class="links">
+                        <a data-toggle="modal" href="#modal-10"><i class="icon-eye-open"></i></a>                                
+                    </div>
+                </div>
+                <div id="modal-10" class="modal hide fade">
+                    <a class="close-modal" href="javascript:;" data-dismiss="modal" aria-hidden="true"><i class="icon-remove"></i></a>
+                    <div class="modal-body">
+                        <img src="images/portfolio/full/full118.jpg" alt=" " width="100%" style="max-height:400px">
+                    </div>
+                </div>                 
+            </li>
+               <!--/Item 11--> 
+            <li>
+                <div class="preview">
+                    <img alt=" " src="images/portfolio/thumb/212a.png">
+                    <div class="overlay">
+                    </div>
+                    <div class="links">
+                        <a data-toggle="modal" href="#modal-11"><i class="icon-eye-open"></i></a>                                
+                    </div>
+                </div>
+                <div id="modal-11" class="modal hide fade">
+                    <a class="close-modal" href="javascript:;" data-dismiss="modal" aria-hidden="true"><i class="icon-remove"></i></a>
+                    <div class="modal-body">
+                        <img src="images/portfolio/full/full212.jpg" alt=" " width="100%" style="max-height:400px">
+                    </div>
+                </div>                 
+            </li>
+             <!--/Item 12--> 
+            <li>
+                <div class="preview">
+                    <img alt=" " src="images/portfolio/thumb/63a.png">
+                    <div class="overlay">
+                    </div>
+                    <div class="links">
+                        <a data-toggle="modal" href="#modal-12"><i class="icon-eye-open"></i></a>                                
+                    </div>
+                </div>
+                <div id="modal-12" class="modal hide fade">
+                    <a class="close-modal" href="javascript:;" data-dismiss="modal" aria-hidden="true"><i class="icon-remove"></i></a>
+                    <div class="modal-body">
+                        <img src="images/portfolio/thumb/IMG-20190527-WA0015.jpg" alt=" " width="100%" style="max-height:400px">
+                    </div>
+                </div>                 
+            </li>
+             <!--/Item 13--> 
+            <li>
+                <div class="preview">
+                    <img alt=" " src="images/portfolio/thumb/301.png">
+                    <div class="overlay">
+                    </div>
+                    <div class="links">
+                        <a data-toggle="modal" href="#modal-13"><i class="icon-eye-open"></i></a>                                
+                    </div>
+                </div>
+                <div id="modal-13" class="modal hide fade">
+                    <a class="close-modal" href="javascript:;" data-dismiss="modal" aria-hidden="true"><i class="icon-remove"></i></a>
+                    <div class="modal-body">
+                        <img src="images/portfolio/full/full301.jpeg" alt=" " width="100%" style="max-height:400px">
+                    </div>
+                </div>                 
+            </li>
+             <!--/Item 14--> 
+            <li>
+                <div class="preview">
+                    <img alt=" " src="images/portfolio/thumb/302.png">
+                    <div class="overlay">
+                    </div>
+                    <div class="links">
+                        <a data-toggle="modal" href="#modal-14"><i class="icon-eye-open"></i></a>                                
+                    </div>
+                </div>
+                <div id="modal-14" class="modal hide fade">
+                    <a class="close-modal" href="javascript:;" data-dismiss="modal" aria-hidden="true"><i class="icon-remove"></i></a>
+                    <div class="modal-body">
+                        <img src="images/portfolio/full/full302.jpeg" alt=" " width="100%" style="max-height:400px">
+                    </div>
+                </div>                 
+            </li>
+             <!--/Item 15--> 
+            <li>
+                <div class="preview">
+                    <img alt=" " src="images/portfolio/thumb/303.png">
+                    <div class="overlay">
+                    </div>
+                    <div class="links">
+                        <a data-toggle="modal" href="#modal-15"><i class="icon-eye-open"></i></a>                                
+                    </div>
+                </div>
+                <div id="modal-15" class="modal hide fade">
+                    <a class="close-modal" href="javascript:;" data-dismiss="modal" aria-hidden="true"><i class="icon-remove"></i></a>
+                    <div class="modal-body">
+                        <img src="images/portfolio/full/full303.jpeg" alt=" " width="100%" style="max-height:400px">
+                    </div>
+                </div>                 
+            </li>
+             <!--/Item 16--> 
+            <li>
+                <div class="preview">
+                    <img alt=" " src="images/portfolio/thumb/304.png">
+                    <div class="overlay">
+                    </div>
+                    <div class="links">
+                        <a data-toggle="modal" href="#modal-16"><i class="icon-eye-open"></i></a>                                
+                    </div>
+                </div>
+                <div id="modal-16" class="modal hide fade">
+                    <a class="close-modal" href="javascript:;" data-dismiss="modal" aria-hidden="true"><i class="icon-remove"></i></a>
+                    <div class="modal-body">
+                        <img src="images/portfolio/full/full304.jpeg" alt=" " width="100%" style="max-height:400px">
+                    </div>
+                </div>                 
+            </li>
+             <!--/Item 17--> 
+            <li>
+                <div class="preview">
+                    <img alt=" " src="images/portfolio/thumb/305.png">
+                    <div class="overlay">
+                    </div>
+                    <div class="links">
+                        <a data-toggle="modal" href="#modal-17"><i class="icon-eye-open"></i></a>                                
+                    </div>
+                </div>
+                <div id="modal-17" class="modal hide fade">
+                    <a class="close-modal" href="javascript:;" data-dismiss="modal" aria-hidden="true"><i class="icon-remove"></i></a>
+                    <div class="modal-body">
+                        <img src="images/portfolio/full/full305.jpeg" alt=" " width="100%" style="max-height:400px">
+                    </div>
+                </div>                 
+            </li>
+             <!--/Item 18--> 
+            <li>
+                <div class="preview">
+                    <img alt=" " src="images/portfolio/thumb/306.png">
+                    <div class="overlay">
+                    </div>
+                    <div class="links">
+                        <a data-toggle="modal" href="#modal-18"><i class="icon-eye-open"></i></a>                                
+                    </div>
+                </div>
+                <div id="modal-18" class="modal hide fade">
+                    <a class="close-modal" href="javascript:;" data-dismiss="modal" aria-hidden="true"><i class="icon-remove"></i></a>
+                    <div class="modal-body">
+                        <img src="images/portfolio/full/full306.jpeg" alt=" " width="100%" style="max-height:400px">
+                    </div>
+                </div>                 
+            </li>
+              <!--/Item 19--> 
+            <li>
+                <div class="preview">
+                    <img alt=" " src="images/portfolio/thumb/307.png">
+                    <div class="overlay">
+                    </div>
+                    <div class="links">
+                        <a data-toggle="modal" href="#modal-19"><i class="icon-eye-open"></i></a>                                
+                    </div>
+                </div>
+                <div id="modal-19" class="modal hide fade">
+                    <a class="close-modal" href="javascript:;" data-dismiss="modal" aria-hidden="true"><i class="icon-remove"></i></a>
+                    <div class="modal-body">
+                        <img src="images/portfolio/full/full307.jpeg" alt=" " width="100%" style="max-height:400px">
+                    </div>
+                </div>                 
+            </li>
+              <!--/Item 20--> 
+            <li>
+                <div class="preview">
+                    <img alt=" " src="images/portfolio/thumb/308.png">
+                    <div class="overlay">
+                    </div>
+                    <div class="links">
+                        <a data-toggle="modal" href="#modal-20"><i class="icon-eye-open"></i></a>                                
+                    </div>
+                </div>
+                <div id="modal-20" class="modal hide fade">
+                    <a class="close-modal" href="javascript:;" data-dismiss="modal" aria-hidden="true"><i class="icon-remove"></i></a>
+                    <div class="modal-body">
+                        <img src="images/portfolio/full/full308.jpeg" alt=" " width="100%" style="max-height:400px">
+                    </div>
+                </div>                 
+            </li>
+        </ul>
+        
+    </section>
+
+<!--Bottom-->
+<section id="bottom" class="main">
+    <!--Container-->
+    <div class="container">
+
+        <!--row-fluids-->
+        <div class="row-fluid">
+
+            <!--Contact Form-->
+            <div class="span3">
+                <h4>Nuestros Datos</h4>
+                <ul class="unstyled address">
+                    <li>
+                        <i class="icon-home"></i><strong>Dirección:</strong> Padre Plácido N° 67
+San José de la Mariquina. <br> Región de los Ríos
+                    </li>
+                    <li>
+                        <i class="icon-envelope"></i>
+                        <strong>Email: </strong> materpopulidei@gmail.com 
+                    </li>
+                    <li>
+                        <i class="icon-phone"></i>
+                        <strong>Fono:</strong> (632)278578 
+                    </li>
+                </ul>
+            </div>
+            <!--End Contact Form-->
+
+            <!--Important Links-->
+            <!--Important Links-->
+    </div>
+    <!--/row-fluid-->
+</div>
+<!--/container-->
+
+</section>
+<!--/bottom-->
+
+<!--Footer-->
+<footer id="footer">
+    <div class="container">
+        <div class="row-fluid">
+            <div class="span5 cp">
+                &copy; <a target="_blank">Liceo Mater Populi Dei</a>.
+            </div>
+            <!--/Copyright-->
+
+            <div class="span1" align="right">
+                <a id="gototop" class="gototop pull-right" href="#"><i class="icon-angle-up"></i></a>
+            </div>
+            <!--/Goto Top-->
+        </div>
+    </div>
+</footer>
+<!--/Footer-->
+
+
+<script src="js/vendor/jquery-1.9.1.min.js"></script>
+<script src="js/vendor/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
